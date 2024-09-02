@@ -1,24 +1,47 @@
-# Composer files
-composer.phar
-vendor/
+# Standard python ignores
+*.egg-info
+.coverage
+.ipynb_checkpoints
+**/__pycache__/
+.python-version
+*.pyc
+**/build
 
-# Local configs
-config/autoload/*.local.php
+# Ignore these macos generated files
+.DS_Store
 
-# Binary gettext files
-*.mo
+# Ignore these Windows generated files
+*Zone.Identifier
 
-# Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
+# Ignore VS Code generated files
+*.vscode
 
-#Doctrine 2
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
+# Raw data
+raw_data/
+*.csv
+*.sqlite
+*.zip
 
-# Legacy ZF1
-demos/
-extras/documentation
+# Data in the package
+# Add files you want to include in the git repo using `git add -f file_name`
+data/
+
+# Saved models
+models/
+*.joblib
+*.h5
+
+# Any pickle files
+*.pickle
+*.pckl
+*.pkl
+
+# Credentials (or files with potentially credentials inside)
+.env
+.env.yaml
+.credentials
+secrets.toml
+*.json
+
+# User defined extras
+# Complete to your desire
